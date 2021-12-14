@@ -22,6 +22,9 @@ class _FirstScreenState extends State<FirstScreen> {
         ],
 
       ),
+      body: Container(
+        color: Colors.tealAccent,
+      ),
     );
   }
 }
