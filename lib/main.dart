@@ -1,7 +1,6 @@
 import "package:flutter/material.dart";
-import 'package:cac_mobile/screens/first_screen.dart';
+import 'package:cac_mobile/screens/home_screen.dart';
 import 'package:cac_mobile/screens/second_screen.dart';
-import 'package:cac_mobile/models/colors.dart';
 
 void main(){
   runApp(MyApp());
