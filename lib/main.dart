@@ -1,22 +1,20 @@
+import 'package:cac_mobile/routes.dart';
 import "package:flutter/material.dart";
-import 'package:cac_mobile/screens/home_screen.dart';
-import 'package:cac_mobile/screens/second_screen.dart';
 
 void main(){
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  static final mainNavigation = MainNavigation();
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: "CAC mobile",
       debugShowCheckedModeBanner: false,
-    title: "CAC mobile",
-    initialRoute: '/',
-    routes: {
-      '/': (context) => FirstScreen(),
-      '/second': (context) => SecondScreen(),
-    },
+      initialRoute: mainNavigation.initialRoute(),
+      routes: mainNavigation.routes,
+
     );
   }
 }
