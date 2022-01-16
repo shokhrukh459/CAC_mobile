@@ -1,3 +1,4 @@
+import 'package:cac_mobile/navigation_pages.dart';
 import 'package:cac_mobile/screens/add/add_load.dart';
 import 'package:cac_mobile/screens/add/add_truck.dart';
 import 'package:cac_mobile/screens/add/add_truck_to_fill.dart';
@@ -29,8 +30,8 @@ abstract class MainNavigationNames {
 class MainNavigation {
   String initialRoute() => MainNavigationNames.home;
   final routes = <String, Widget Function(BuildContext)>{
-    MainNavigationNames.home: (context) => const HomeScreen(),
-    // MainNavigationNames.notification: (context) => const Notification(),
+    MainNavigationNames.home: (context) => NavigationPages(),
+    //MainNavigationNames.notification: (context) => Notification(),
     MainNavigationNames.allPosts: (context) => const AllPosts(),
     MainNavigationNames.addLoad: (context) => const AddLoad(),
     MainNavigationNames.addTruck: (context) => const AddTruck(),

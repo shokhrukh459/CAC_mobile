@@ -1,3 +1,4 @@
+import 'package:cac_mobile/models/colors.dart';
 import 'package:flutter/material.dart';
 
 
@@ -11,6 +12,22 @@ class AddLoad extends StatefulWidget {
 class _AddLoadState extends State<AddLoad> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+        appBar: AppBar(
+        backgroundColor: BrandColors.mainColor,
+        title: Image.asset('assets/images/cac_mini.png', fit: BoxFit.cover),
+    actions: [
+    Icon(
+    Icons.notifications,
+    size: 24,
+    ),
+    SizedBox(
+    width: 16,
+    ),
+    ],
+    ),
+      body: Center(child: Text("Add load"),),
+    );
+
   }
 }

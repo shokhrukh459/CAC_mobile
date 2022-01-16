@@ -1,3 +1,4 @@
+import 'package:cac_mobile/models/colors.dart';
 import 'package:cac_mobile/routes.dart';
 import "package:flutter/material.dart";
 
@@ -13,7 +14,13 @@ class MyApp extends StatelessWidget {
       title: "CAC mobile",
       debugShowCheckedModeBanner: false,
       initialRoute: mainNavigation.initialRoute(),
+      theme: ThemeData(
+        primaryColor: BrandColors.mainColor,
+
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
       routes: mainNavigation.routes,
+
 
     );
   }
