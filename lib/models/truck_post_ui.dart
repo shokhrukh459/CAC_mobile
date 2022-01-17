@@ -7,7 +7,6 @@ class TruckPostUI extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 160,
       width: double.infinity,
       decoration: BoxDecoration(
         color: Colors.white,
@@ -16,141 +15,143 @@ class TruckPostUI extends StatelessWidget {
       ),
       child: Padding(
         padding: const EdgeInsets.all(8.0),
-        child: Row(
+        child: Column(
           children: [
-            Column(),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+            Row(
               children: [
-                Text(
-                  'Tent',
-                  style: TextStyle(
-                    color: BrandColors.textColorGrey
-                        .withOpacity(0.5),
-                    fontSize: 14,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-                SizedBox(height: 8,),
-                Text(
-                  'Karshi (Uzb)',
-                  style: TextStyle(
-                    color: BrandColors.textColorGrey
-                        .withOpacity(0.5),
-                    fontSize: 14,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-                SizedBox(height: 8,),
-                Text(
-                  'Tashkent (Uzb)',
-                  style: TextStyle(
-                    color: BrandColors.textColorGrey
-                        .withOpacity(0.5),
-                    fontSize: 14,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-                SizedBox(height: 8,),
-                Text(
-                  'Size truck',
-                  style: TextStyle(
-                    color: BrandColors.textColorGrey
-                        .withOpacity(0.5),
-                    fontSize: 14,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-                SizedBox(height: 8,),
-                Text(
-                  'Empty size',
-                  style: TextStyle(
-                    color: BrandColors.textColorGrey
-                        .withOpacity(0.5),
-                    fontSize: 14,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-                SizedBox(height: 8,),
-                Text(
-                  'Time to get',
-                  style: TextStyle(
-                    color: BrandColors.textColorGrey
-                        .withOpacity(0.5),
-                    fontSize: 14,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
+                Column(),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Truck type',
+                      style: TextStyle(
+                        color: BrandColors.textColorGrey
+                            .withOpacity(0.5),
+                        fontSize: 14,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                    SizedBox(height: 8,),
+                    Text(
+                      'Truck size',
+                      style: TextStyle(
+                        color: BrandColors.textColorGrey
+                            .withOpacity(0.5),
+                        fontSize: 14,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                    SizedBox(height: 8,),
+                    Text(
+                      'Where now',
+                      style: TextStyle(
+                        color: BrandColors.textColorGrey
+                            .withOpacity(0.5),
+                        fontSize: 14,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                    SizedBox(height: 8,),
+                    Text(
+                      'Money',
+                      style: TextStyle(
+                        color: BrandColors.textColorGrey
+                            .withOpacity(0.5),
+                        fontSize: 14,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                    SizedBox(height: 8,),
+                    Text(
+                      'Temperature',
+                      style: TextStyle(
+                        color: BrandColors.textColorGrey
+                            .withOpacity(0.5),
+                        fontSize: 14,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                    SizedBox(height: 8,),
 
+                  ],
+                ),
+                Expanded(child: Container()),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  children: [
+                    Text(
+                      'Tent',
+                      style: TextStyle(
+                        color: BrandColors.textColorGrey
+                            .withOpacity(1),
+                        fontSize: 14,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                    SizedBox(height: 8,),
+                    Text(
+                      '15 tonna 8 m cube',
+                      style: TextStyle(
+                        color: BrandColors.textColorGrey
+                            .withOpacity(1),
+                        fontSize: 14,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                    SizedBox(height: 8,),
+                    Text(
+                      "Karshi(Uzb)" ,
+                      style: TextStyle(
+                        color: BrandColors.textColorGrey
+                            .withOpacity(1),
+                        fontSize: 14,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                    SizedBox(height: 8,),
+                    Text(
+                      'Negotiable',
+                      style: TextStyle(
+                        color: BrandColors.textColorGrey
+                            .withOpacity(1),
+                        fontSize: 14,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                    SizedBox(height: 8,),
+                    Text(
+                      '23 C',
+                      style: TextStyle(
+                        color: BrandColors.textColorGrey
+                            .withOpacity(1),
+                        fontSize: 14,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                    SizedBox(height: 8,),
+
+                  ],
+                ),
               ],
             ),
-            Expanded(child: Container()),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.end,
-              children: [
-                Text(
-                  '23 C',
-                  style: TextStyle(
-                    color: BrandColors.textColorGrey
-                        .withOpacity(1),
-                    fontSize: 14,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-                SizedBox(height: 8,),
-                Text(
-                  '~ 500 km',
-                  style: TextStyle(
-                    color: BrandColors.textColorGrey
-                        .withOpacity(1),
-                    fontSize: 14,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-                SizedBox(height: 8,),
-                Text(
-                  "400 USD (0.8 USD/km)" ,
-                  style: TextStyle(
-                    color: BrandColors.textColorGrey
-                        .withOpacity(1),
-                    fontSize: 14,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-                SizedBox(height: 8,),
-                Text(
-                  '6 tonna   3 m cube',
-                  style: TextStyle(
-                    color: BrandColors.textColorGrey
-                        .withOpacity(1),
-                    fontSize: 14,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-                SizedBox(height: 8,),
-                Text(
-                  '9 tonna   5 m cube',
-                  style: TextStyle(
-                    color: BrandColors.textColorGrey
-                        .withOpacity(1),
-                    fontSize: 14,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-                SizedBox(height: 8,),
-                Text(
-                  '08:00   11.11.2021',
-                  style: TextStyle(
-                    color: BrandColors.textColorGrey
-                        .withOpacity(1),
-                    fontSize: 14,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-
-
-              ],
-            ),
+            Row(children: [
+              Icon(Icons.settings_outlined, color: Colors.blue,),
+              SizedBox(width: 16,),
+              Row(children: [
+                Icon(Icons.star, color: Colors.yellow,),
+                Icon(Icons.star, color: Colors.yellow,),
+                Icon(Icons.star, color: Colors.yellow,),
+                Icon(Icons.star_half, color: Colors.yellow,),
+                Icon(Icons.star_border_outlined, color: Colors.yellow,),
+              ],),
+              Expanded(child: Container()),
+              Text("Published 9:15  12.01.2022", style: TextStyle(
+                fontSize: 12,
+                color: Colors.grey,
+                fontWeight: FontWeight.w500
+              ),)
+            ],),
           ],
         ),
       ),

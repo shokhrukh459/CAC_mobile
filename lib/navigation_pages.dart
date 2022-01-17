@@ -1,7 +1,7 @@
 import 'package:cac_mobile/models/colors.dart';
 import 'package:cac_mobile/screens/add/add_load.dart';
 import 'package:cac_mobile/screens/homepage/home_screen.dart';
-import 'package:cac_mobile/screens/posts_page/all_posts.dart';
+import 'package:cac_mobile/screens/posts_page/posts_page.dart';
 import 'package:cac_mobile/screens/saved/saved_posts.dart';
 import 'package:cac_mobile/screens/settings/Settings.dart';
 import 'package:flutter/material.dart';
@@ -23,8 +23,8 @@ class _NavigationPagesState extends State<NavigationPages> {
       extendBody: true,
       bottomNavigationBar: PandaBar(
         fabColors: [BrandColors.mainColor, BrandColors.mainColor],
-        backgroundColor: Colors.white,
-        buttonSelectedColor: BrandColors.mainColor,
+        backgroundColor: BrandColors.mainColor,
+        buttonSelectedColor: Colors.white,
 
         buttonData: [
           PandaBarButtonData(
@@ -64,7 +64,7 @@ class _NavigationPagesState extends State<NavigationPages> {
             case 'home':
               return HomeScreen();
             case 'posts':
-              return AllPosts();
+              return PostsPage();
             case 'saved':
               return SavedPosts();
             case 'settings':

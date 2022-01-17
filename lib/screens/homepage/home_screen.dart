@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:cac_mobile/models/colors.dart';
 
 
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
@@ -38,9 +39,9 @@ class _HomeScreenState extends State<HomeScreen> {
       body: Container(
           color: BrandColors.backgroundColor,
           child: Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.only(left: 8.0, right: 8.0, top: 16),
             child: Container(
-              height: double.infinity,
+
               child: ListView(
                 children: [
                   Column(

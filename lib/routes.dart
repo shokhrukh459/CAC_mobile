@@ -2,7 +2,7 @@ import 'package:cac_mobile/navigation_pages.dart';
 import 'package:cac_mobile/screens/add/add_load.dart';
 import 'package:cac_mobile/screens/add/add_truck.dart';
 import 'package:cac_mobile/screens/add/add_truck_to_fill.dart';
-import 'package:cac_mobile/screens/posts_page/all_posts.dart';
+import 'package:cac_mobile/screens/posts_page/posts_page.dart';
 import 'package:cac_mobile/screens/posts_page/filter.dart';
 import 'package:cac_mobile/screens/posts_page/my_posts.dart';
 import 'package:cac_mobile/screens/saved/saved_posts.dart';
@@ -32,7 +32,7 @@ class MainNavigation {
   final routes = <String, Widget Function(BuildContext)>{
     MainNavigationNames.home: (context) => NavigationPages(),
     //MainNavigationNames.notification: (context) => Notification(),
-    MainNavigationNames.allPosts: (context) => const AllPosts(),
+    MainNavigationNames.allPosts: (context) => const PostsPage(),
     MainNavigationNames.addLoad: (context) => const AddLoad(),
     MainNavigationNames.addTruck: (context) => const AddTruck(),
     MainNavigationNames.addTruckToFill: (context) => const AddTruckToFill(),
